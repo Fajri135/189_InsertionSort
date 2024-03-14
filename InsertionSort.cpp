@@ -7,7 +7,7 @@ int n;                  // Membuat Variabel inputan n
 void input() {          // Procedure Input
     while (true)
     {
-        cout << "Masukan Jumlah Data pada Array ; ";        // Membuat Inputan Jumlah element Array
+        cout << "Masukan Jumlah Data pada Array : ";        // Membuat Inputan Jumlah element Array
         cin >> n;                                           // Memanggil variabel inputan n
 
         if (n <= 20) {                                      // Membuat kondisi n tidak lebih dari 20
@@ -71,5 +71,7 @@ void display() {                                             // Procedure Displa
 }
 
     int main(){
-        
+        input();                                                // Memanggil input
+        insertionsort();                                        // Memanggil insertionsort
+        display();                                              // Memanggil display
 }
